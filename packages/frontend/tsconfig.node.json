@@ -11,8 +11,7 @@
     "allowImportingTsExtensions": true,
     "resolveJsonModule": true,
     "isolatedModules": true,
-    "outDir": "./dist-node",
-    "declaration": true
+    "noEmit": true
   },
   "include": ["vite.config.ts"]
 }
