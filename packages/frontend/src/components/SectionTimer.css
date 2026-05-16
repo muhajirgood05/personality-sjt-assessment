@@ -1,0 +1,152 @@
+.section-timer {
+  position: sticky;
+  top: 1rem;
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  background-color: #f5f5f5;
+  border: 1px solid #e0e0e0;
+  font-family: 'Courier New', Courier, monospace;
+  width: fit-content;
+  margin-left: auto;
+}
+
+.section-timer__time {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #333;
+}
+
+.section-timer__label {
+  font-size: 0.75rem;
+  color: #666;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.section-timer__submit-btn {
+  padding: 0.375rem 0.75rem;
+  font-size: 0.8rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: #fff;
+  color: #333;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.section-timer__submit-btn:hover {
+  background-color: #e8e8e8;
+}
+
+/* Warning state: ≤5 minutes remaining */
+.section-timer--warning {
+  background-color: #fff0f0;
+  border-color: #ff4d4d;
+}
+
+.section-timer--warning .section-timer__time {
+  color: #d32f2f;
+  animation: pulse 1s ease-in-out infinite;
+}
+
+.section-timer--warning .section-timer__submit-btn {
+  border-color: #d32f2f;
+  color: #d32f2f;
+}
+
+.section-timer--warning .section-timer__submit-btn:hover {
+  background-color: #ffebee;
+}
+
+@keyframes pulse {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+}
+
+/* Confirmation dialog overlay */
+.section-timer__dialog-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.section-timer__dialog {
+  background: #fff;
+  border-radius: 8px;
+  padding: 1.5rem;
+  max-width: 400px;
+  width: 90%;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+}
+
+.section-timer__dialog h3 {
+  margin: 0 0 0.75rem;
+  font-size: 1.1rem;
+  color: #333;
+}
+
+.section-timer__dialog p {
+  margin: 0 0 1.25rem;
+  color: #555;
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
+.section-timer__dialog-actions {
+  display: flex;
+  gap: 0.75rem;
+  justify-content: flex-end;
+}
+
+.section-timer__dialog-cancel {
+  padding: 0.5rem 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background: #fff;
+  color: #333;
+  cursor: pointer;
+}
+
+.section-timer__dialog-confirm {
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 4px;
+  background: #1976d2;
+  color: #fff;
+  cursor: pointer;
+}
+
+.section-timer__dialog-confirm:hover {
+  background: #1565c0;
+}
+
+/* Responsive: tablet 768px+ */
+@media (min-width: 768px) {
+  .section-timer {
+    padding: 0.625rem 1.25rem;
+  }
+
+  .section-timer__time {
+    font-size: 1.5rem;
+  }
+
+  .section-timer__submit-btn {
+    padding: 0.5rem 1rem;
+    font-size: 0.875rem;
+  }
+}

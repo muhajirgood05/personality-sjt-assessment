@@ -1,0 +1,374 @@
+/* ─── Candidate Report ─────────────────────────────────────────────────────── */
+
+.candidate-report {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 2rem;
+  font-family: system-ui, -apple-system, sans-serif;
+  color: #1f2937;
+}
+
+.candidate-report__header {
+  margin-bottom: 2rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 2px solid #e5e7eb;
+}
+
+.candidate-report__header h1 {
+  font-size: 1.75rem;
+  margin-bottom: 1rem;
+}
+
+.candidate-report__meta p {
+  margin: 0.25rem 0;
+  color: #4b5563;
+}
+
+.candidate-report__composite {
+  display: flex;
+  gap: 2rem;
+  margin-top: 1.5rem;
+  padding: 1rem;
+  background: #f9fafb;
+  border-radius: 8px;
+}
+
+.candidate-report__suitability,
+.candidate-report__confidence {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.candidate-report__suitability-label,
+.candidate-report__confidence-label {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: #6b7280;
+}
+
+.candidate-report__suitability-score {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #3b82f6;
+}
+
+.candidate-report__suitability-category {
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: #374151;
+}
+
+.candidate-report__confidence-value {
+  font-size: 0.875rem;
+  font-weight: 600;
+}
+
+/* ─── Personality Profile ─────────────────────────────────────────────────── */
+
+.personality-profile {
+  margin-bottom: 2.5rem;
+}
+
+.personality-profile h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.personality-profile__chart {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
+.personality-profile__dimension {
+  margin-bottom: 1.5rem;
+  padding: 1rem;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+}
+
+.personality-profile__dimension h3 {
+  font-size: 1.125rem;
+  margin-bottom: 0.5rem;
+}
+
+.personality-profile__sten-score {
+  color: #4b5563;
+  margin-bottom: 0.75rem;
+}
+
+/* ─── Facet Breakdown ─────────────────────────────────────────────────────── */
+
+.facet-breakdown {
+  margin-top: 0.75rem;
+}
+
+.facet-breakdown__title {
+  font-size: 0.875rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  color: #6b7280;
+}
+
+.facet-breakdown__item {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 0.375rem;
+}
+
+.facet-breakdown__label {
+  flex: 0 0 140px;
+  font-size: 0.8125rem;
+  color: #374151;
+}
+
+.facet-breakdown__bar-container {
+  flex: 1;
+  height: 12px;
+  background: #f3f4f6;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.facet-breakdown__bar {
+  height: 100%;
+  background: #3b82f6;
+  border-radius: 6px;
+  transition: width 0.3s ease;
+}
+
+.facet-breakdown__score {
+  flex: 0 0 24px;
+  font-size: 0.8125rem;
+  font-weight: 600;
+  text-align: right;
+}
+
+/* ─── Narrative Interpretation ────────────────────────────────────────────── */
+
+.narrative-interpretation {
+  margin-top: 0.75rem;
+  padding-top: 0.75rem;
+  border-top: 1px solid #f3f4f6;
+}
+
+.narrative-interpretation__title {
+  font-size: 0.875rem;
+  font-weight: 600;
+  margin-bottom: 0.375rem;
+  color: #6b7280;
+}
+
+.narrative-interpretation__text {
+  font-size: 0.875rem;
+  line-height: 1.5;
+  color: #374151;
+}
+
+.narrative-interpretation__truncated-notice {
+  font-size: 0.75rem;
+  color: #9ca3af;
+}
+
+/* ─── Kemenkeu Values Chart ───────────────────────────────────────────────── */
+
+.kemenkeu-values-chart {
+  margin-bottom: 2.5rem;
+}
+
+.kemenkeu-values-chart h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.kemenkeu-values-chart__container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1.5rem;
+}
+
+.kemenkeu-values-chart__scores {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 0.75rem;
+}
+
+.kemenkeu-values-chart__score-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem 0.75rem;
+  background: #f9fafb;
+  border-radius: 6px;
+}
+
+.kemenkeu-values-chart__value-name {
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+
+.kemenkeu-values-chart__value-score {
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: #10b981;
+}
+
+/* ─── Behavioral Examples ─────────────────────────────────────────────────── */
+
+.behavioral-examples {
+  margin-bottom: 2.5rem;
+}
+
+.behavioral-examples h3 {
+  font-size: 1.25rem;
+  margin-bottom: 1rem;
+}
+
+.behavioral-examples__empty {
+  color: #6b7280;
+  font-style: italic;
+}
+
+.behavioral-examples__value-group {
+  margin-bottom: 1rem;
+}
+
+.behavioral-examples__value-group h4 {
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+  color: #374151;
+}
+
+.behavioral-examples__examples {
+  list-style: disc;
+  padding-left: 1.5rem;
+}
+
+.behavioral-examples__example-item {
+  font-size: 0.875rem;
+  line-height: 1.5;
+  margin-bottom: 0.25rem;
+  color: #4b5563;
+}
+
+/* ─── Assessment Validity ─────────────────────────────────────────────────── */
+
+.assessment-validity {
+  margin-bottom: 2.5rem;
+}
+
+.assessment-validity h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.assessment-validity__flag {
+  margin-bottom: 1rem;
+}
+
+.assessment-validity__flag-badge {
+  display: inline-block;
+  padding: 0.375rem 0.75rem;
+  border-radius: 9999px;
+  font-size: 0.875rem;
+  font-weight: 600;
+}
+
+.assessment-validity__flag-badge--valid {
+  background: #d1fae5;
+  color: #065f46;
+}
+
+.assessment-validity__flag-badge--cautionary {
+  background: #fef3c7;
+  color: #92400e;
+}
+
+.assessment-validity__flag-badge--invalid {
+  background: #fee2e2;
+  color: #991b1b;
+}
+
+.assessment-validity__metrics {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 0.75rem;
+}
+
+.assessment-validity__metric {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem 0.75rem;
+  background: #f9fafb;
+  border-radius: 6px;
+}
+
+.assessment-validity__metric-label {
+  font-size: 0.8125rem;
+  color: #4b5563;
+}
+
+.assessment-validity__metric-value {
+  font-size: 0.8125rem;
+  font-weight: 600;
+}
+
+.assessment-validity__warning {
+  margin-top: 1rem;
+  padding: 0.75rem 1rem;
+  background: #fef3c7;
+  border: 1px solid #f59e0b;
+  border-radius: 8px;
+  font-size: 0.875rem;
+  color: #92400e;
+}
+
+/* ─── Improvement Recommendations ─────────────────────────────────────────── */
+
+.improvement-recommendations {
+  margin-bottom: 2.5rem;
+}
+
+.improvement-recommendations h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.improvement-recommendations__none {
+  color: #6b7280;
+  font-style: italic;
+}
+
+.improvement-recommendations__item {
+  margin-bottom: 1rem;
+  padding: 1rem;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  border-left: 4px solid #f59e0b;
+}
+
+.improvement-recommendations__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.5rem;
+}
+
+.improvement-recommendations__value-name {
+  font-size: 1rem;
+  margin: 0;
+}
+
+.improvement-recommendations__current-score {
+  font-size: 0.8125rem;
+  color: #6b7280;
+}
+
+.improvement-recommendations__suggestion {
+  font-size: 0.875rem;
+  line-height: 1.5;
+  color: #374151;
+  margin: 0;
+}

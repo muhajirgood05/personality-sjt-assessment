@@ -1,0 +1,66 @@
+.elaboration-field {
+  margin: 1rem 0;
+}
+
+.elaboration-field__label {
+  display: block;
+  font-size: 0.9rem;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+  color: #333;
+}
+
+.elaboration-field__textarea {
+  width: 100%;
+  min-height: 120px;
+  padding: 0.75rem;
+  border: 2px solid #e0e0e0;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  line-height: 1.5;
+  resize: vertical;
+  transition: border-color 0.2s;
+  font-family: inherit;
+}
+
+.elaboration-field__textarea:focus {
+  outline: none;
+  border-color: #4a90d9;
+  box-shadow: 0 0 0 3px rgba(74, 144, 217, 0.15);
+}
+
+.elaboration-field__textarea--disabled {
+  background: #f5f5f5;
+  cursor: not-allowed;
+  opacity: 0.7;
+}
+
+.elaboration-field__char-count {
+  display: block;
+  text-align: right;
+  font-size: 0.8rem;
+  color: #666;
+  margin-top: 0.25rem;
+}
+
+.elaboration-field__char-count--valid {
+  color: #2e7d32;
+}
+
+.elaboration-field__char-count--warning {
+  color: #f57c00;
+}
+
+.elaboration-field__char-count--error {
+  color: #d32f2f;
+}
+
+.elaboration-field__errors {
+  margin-top: 0.5rem;
+}
+
+.elaboration-field__error {
+  color: #d32f2f;
+  font-size: 0.85rem;
+  margin: 0.25rem 0;
+}

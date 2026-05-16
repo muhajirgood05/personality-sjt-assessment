@@ -1,0 +1,40 @@
+/**
+ * Assessment Security CSS
+ *
+ * Disables browser copy, print, and screenshot functions during active assessment sessions.
+ * Validates: Requirements 15.3
+ */
+
+/* Prevent text selection and copying */
+.assessment-secure {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-touch-callout: none;
+}
+
+/* Disable printing — renders blank page when print is attempted */
+@media print {
+  .assessment-secure {
+    display: none !important;
+    visibility: hidden !important;
+  }
+
+  body::after {
+    content: 'Pencetakan tidak diizinkan selama sesi asesmen aktif.';
+    display: block;
+    font-size: 24px;
+    text-align: center;
+    padding: 100px 20px;
+    color: #333;
+  }
+}
+
+/* Prevent drag operations on assessment content */
+.assessment-secure img,
+.assessment-secure a,
+.assessment-secure * {
+  -webkit-user-drag: none;
+  user-drag: none;
+}
