@@ -1,7 +1,7 @@
 {
-  "buildCommand": "bash build-vercel.sh",
+  "buildCommand": "cd packages/frontend && npx vite build",
   "outputDirectory": "packages/frontend/dist",
-  "installCommand": "npm install",
+  "installCommand": "cd packages/frontend && npm install",
   "framework": null,
   "functions": {
     "api/index.ts": {

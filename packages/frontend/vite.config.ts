@@ -6,7 +6,7 @@ export default defineConfig({
   plugins: [react()],
   resolve: {
     alias: {
-      '@assessment/shared': path.resolve(__dirname, '../shared/src'),
+      '@assessment/shared': path.resolve(__dirname, 'src/shared-types'),
     },
   },
   server: {
