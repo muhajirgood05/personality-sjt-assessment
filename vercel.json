@@ -1,5 +1,5 @@
 {
-  "buildCommand": "cd packages/frontend && npx vite build",
+  "buildCommand": "bash build-vercel.sh",
   "outputDirectory": "packages/frontend/dist",
   "installCommand": "npm install",
   "framework": null,
