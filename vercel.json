@@ -1,8 +1,8 @@
 {
-  "buildCommand": "cd packages/shared && npm run build && cd ../frontend && npm run build",
+  "buildCommand": "cd packages/shared && npx tsc && cd ../frontend && npx vite build",
   "outputDirectory": "packages/frontend/dist",
   "installCommand": "npm install",
-  "framework": "vite",
+  "framework": null,
   "functions": {
     "api/index.ts": {
       "runtime": "@vercel/node@3.0.0"
