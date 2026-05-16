@@ -16,6 +16,7 @@
     "format:check": "prettier --check \"packages/**/*.{ts,tsx,json,md}\""
   },
   "devDependencies": {
+    "@rollup/rollup-linux-x64-gnu": "4.40.2",
     "@typescript-eslint/eslint-plugin": "^7.0.0",
     "@typescript-eslint/parser": "^7.0.0",
     "eslint": "^8.57.0",
